@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 3</title>
+	<style>
+		
+		.centrado {margin-left: 25%;}
+		
+		.contenedor {
+			width: 30%; 
+			height: 200px; 
+			background-color: white; 
+			box-sizing: border-box;
+   			padding: 15px;
+   			float: left;}
+
+		.relative {
+			position: relative; 
+			width: 100%; 
+			height: 150px; 
+			background-color: silver;  
+			box-sizing: border-box;
+			border: 1px solid black;}
+		
+
+		/*España*/
+		.rojo1 {
+			position: absolute; 
+			top: 0; 
+			width: 100%; 
+			height: 40px;
+			background-color: red; 
+			z-index: 1}
+
+		.rojo2 {
+			position: absolute; 
+			bottom: 0; 
+			width: 100%; 
+			height: 40px;
+			background-color: red; 
+			z-index: 2}
+
+		.amarillo {
+			position: absolute; 
+			bottom: 0; 
+			width: 100%; 
+			height: 100%;
+			background-color: yellow;}
+		
+
+		/*Dinamarca*/
+		.blanco1 {
+			position: absolute; 
+			top: 46%;
+			width: 100%; 
+			height: 20px;
+			background-color: white; z-index: 1}
+
+		.blanco2 {
+			position: absolute; 
+			left: 30%;
+			width: 20px; 
+			height: 100%;
+			background-color: white; z-index: 2}
+
+		.rojo {
+			position: absolute; 
+			width: 100%; 
+			height: 100%;
+			bottom: 0;
+			background-color: red;}
+
+
+		/*Emiratos Arabes*/
+		.verde_emiratos {
+			position: absolute; 
+			top: 0;
+			width: 100%; 
+			height: 50px;
+			background-color: green; z-index: 1}
+
+		.negro_emiratos {
+			position: absolute; 
+			bottom: 0;
+			width: 100%; 
+			height: 50px;
+			background-color: black; z-index: 1}
+
+		.rojo_emiratos {
+			position: absolute; 
+			left: 0;
+			width: 53px; 
+			height: 100%;
+			background-color: red; z-index: 2}
+
+		.blanco_emiratos {
+			position: absolute; 
+			width: 100%; 
+			height: 100%;
+			bottom: 0;
+			background-color: white;}
+
+		.clearfix {clear: both;}
+
+
+		/*Japon*/
+		.rojo_japon {
+			position: absolute; 
+			left: 33%;
+			top: 40px;
+			width: 80px; 
+			height: 80px;
+			border-radius: 50%;
+			background-color: red; z-index: 1}
+
+		.blanco_japon {
+			position: absolute; 
+			width: 100%; 
+			height: 100%;
+			bottom: 0;
+			background-color: white;}
+	</style>
+</head>
+
+<body>
+	<div class="centrado">
+		<div class="contenedor">
+			<div class="relative">
+				<div class="rojo1">
+				</div>
+				<div class="rojo2">
+				</div>
+				<div class="amarillo">
+				</div>
+			</div>
+			<p>España</p>
+		</div>
+
+		<div class="contenedor">
+			<div class="relative">
+				<div class="blanco1">
+				</div>
+				<div class="blanco2">
+				</div>
+				<div class="rojo">
+				</div>
+			</div>
+			<p>Dinamarca</p>
+		</div>
+
+		<div class="contenedor clearfix">
+			<div class="relative">
+				<div class="verde_emiratos">
+				</div>
+				<div class="negro_emiratos">
+				</div>
+				<div class="rojo_emiratos">
+				</div>
+				<div class="blanco_emiratos">
+				</div>
+			</div>
+			<p>Emiratos Árabes</p>
+		</div>
+
+		<div class="contenedor">
+			<div class="relative">
+				<div class="rojo_japon">
+				</div>
+				<div class="blanco_japon">
+				</div>
+			</div>
+			<p>Japón</p>
+		</div>
+	</div>
+
+	
+</body>
+</html>
